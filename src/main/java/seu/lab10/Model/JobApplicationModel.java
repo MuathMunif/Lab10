@@ -17,12 +17,11 @@ public class JobApplicationModel {
     private Integer id;
 
     @NotNull(message = "The UserId Cannot be null")
+    @Column(columnDefinition = "INT NOT NULL")
     private Integer userId;
 
     @NotNull(message = "The jobPostId Cannot be null")
+    @Column(columnDefinition = "INT NOT NULL")
     private Integer jobPostId;
-
-    //todo check if they need to insert column
-
 
 }

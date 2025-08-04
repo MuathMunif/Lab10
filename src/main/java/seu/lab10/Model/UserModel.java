@@ -39,6 +39,7 @@ public class UserModel {
 
     @Pattern(regexp = "^(JOB_SEEKER|EMPLOYER)$", message = "Must be either JOB_SEEKER or EMPLOYER only")
     @NotEmpty(message = "The role Cannot be null.")
+    @Column(columnDefinition = "VARCHAR(11) NOT NULL")
     private String role;
 
 }

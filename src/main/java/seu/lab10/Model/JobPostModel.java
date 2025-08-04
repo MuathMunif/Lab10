@@ -39,7 +39,6 @@ public class JobPostModel {
     @Column(columnDefinition = "Double NOT NULL")
     private double salary;
 
-    @
     @Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
     private LocalDate postingDate;
 
